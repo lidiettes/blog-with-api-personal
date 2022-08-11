@@ -5,3 +5,7 @@
 .main-container {
     margin: 20px;
 } 
+
+.btn .btn-primary{
+    color: grey;
+}
