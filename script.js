@@ -4,6 +4,9 @@ const intro = document.getElementById("main-title")
 const containerIntro = document.getElementById("container-intro")
 const containerModal = document.getElementById("container-modal")
 
+
+
+
 //functions
 
 function getPost() {
@@ -17,7 +20,7 @@ function getPost() {
                 post.innerHTML = `
                 <div class="shadow-lg p-3 mb-5 bg-body rounded w-70 main-container" >
                 <div class="row row-cols-1 "><div id= "main-title" class="col" type="button" class="btn btn-primary" data-bs-toggle="modal"
-                data-bs-target="#post${i}">"${data[i].title}"</div> </div>
+                data-bs-target="#post${i}">"${data[i].title}"</div><i class="fa-solid fa-pen-to-square"></i> <i class="fa-solid fa-trash-can"></i></div>
                 </div>
                 `
                 containerIntro.appendChild(post);
@@ -30,7 +33,7 @@ function getPost() {
                     <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Hola Ale</h5>
+                            <h5 class="modal-title" id="exampleModalLabel">Post</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
